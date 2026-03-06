@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jet-delivery-python-wrapper"
+version = "0.1.0"
+description = "Python wrapper for the Jet Delivery API"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Okoya Usman"}
+]
+keywords = ["jet-delivery", "api", "shipping", "logistics", "delivery"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/okoyausman/jet-delivery-python-wrapper"
+Documentation = "https://api-docs.jetdelivery.com/"
+Repository = "https://github.com/okoyausman/jet-delivery-python-wrapper"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jetdelivery*"]
